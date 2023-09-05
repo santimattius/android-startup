@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Android Startup"
+rootProject.name = "android-startup"
 include(":app")
