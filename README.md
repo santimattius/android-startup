@@ -20,3 +20,7 @@ You define each component initializer by creating a class that implements the In
 
 - The create() method, which contains all of the necessary operations to initialize the component and returns an instance of T.
 - The dependencies() method, which returns a list of the other Initializer<T> objects that the initializer depends on. You can use this method to control the order in which the app runs the initializers at startup.
+
+# References
+- [App Startup Documentation](https://developer.android.com/topic/libraries/app-startup)
+- [Dependency injection with Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
