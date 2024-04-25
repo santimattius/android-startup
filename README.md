@@ -1,4 +1,4 @@
-# Android Startup with Hilt
+# Android Startup Basic
 
 ## App Startup
 The App Startup library provides a straightforward, performant way to initialize components at
