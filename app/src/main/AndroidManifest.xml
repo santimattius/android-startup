@@ -31,10 +31,6 @@
             tools:node="merge">
 
             <meta-data
-                android:name="com.santimattius.android.startup.initializer.DependencyGraphInitializer"
-                android:value="androidx.startup" />
-
-            <meta-data
                 android:name="com.santimattius.android.startup.initializer.CrashTrackerInitializer"
                 android:value="androidx.startup" />
         </provider>

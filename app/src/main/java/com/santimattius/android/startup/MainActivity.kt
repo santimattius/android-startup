@@ -22,14 +22,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.santimattius.android.startup.service.CrashTrackerService
 import com.santimattius.android.startup.ui.theme.AndroidStartupTheme
-import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
-@AndroidEntryPoint
+
 class MainActivity : ComponentActivity() {
-
-    @Inject
-    lateinit var crashTrackerService: CrashTrackerService
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +36,7 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Greeting(
                         title = "Android Startup with Hilt",
-                        description = "Service initialized: ${crashTrackerService.isInitialized}"
+                        description = "Service initialized: ${CrashTrackerService.isInitialized}"
                     )
                 }
             }

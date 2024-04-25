@@ -1,11 +1,14 @@
 package com.santimattius.android.startup.service
 
-class CrashTrackerService {
+import android.content.Context
+
+object CrashTrackerService {
 
     var isInitialized: Boolean = false
         private set
 
-    fun initialize() {
+    fun initialize(context: Context): CrashTrackerService {
         isInitialized = true
+        return this
     }
 }
