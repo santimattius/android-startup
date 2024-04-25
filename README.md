@@ -9,6 +9,8 @@ Instead of defining separate content providers for each component you need to in
 Startup allows you to define component initializers that share a single content provider. This can
 significantly improve app startup time.
 
+Check this basic example: https://github.com/santimattius/android-startup/tree/android-startup-basics
+
 ## Initialize components at app startup
 
 Apps and libraries often rely on having components initialized right away when the app starts up. You can meet this need by using content providers to initialize each dependency, but content providers are expensive to instantiate and can slow down the startup sequence unnecessarily. Additionally, Android initializes content providers in an undetermined order. App Startup provides a more performant way to initialize components at app startup and explicitly define their dependencies.
