@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "android-startup"
 include(":app")
+include(":koin-startup")
+include(":feature")

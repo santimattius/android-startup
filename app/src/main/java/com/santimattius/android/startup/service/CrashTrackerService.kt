@@ -2,7 +2,7 @@ package com.santimattius.android.startup.service
 
 import android.content.Context
 
-object CrashTrackerService {
+class CrashTrackerService {
 
     var isInitialized: Boolean = false
         private set
