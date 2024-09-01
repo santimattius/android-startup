@@ -11,6 +11,7 @@ import java.io.File
 object ApiClient {
 
     lateinit var retrofit: Retrofit
+
     fun initialize(applicationContext: Context, baseUrl: String) {
         // init api client using retrofit and define custom cache for example.
         val httpCacheDirectory: File = File(applicationContext.cacheDir, "http-cache")

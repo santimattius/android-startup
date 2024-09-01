@@ -1,16 +1,16 @@
 [versions]
-androidGradlePlugin = "8.1.4"
-kotlinGradlePlugin = "1.9.23"
+androidGradlePlugin = "8.6.0"
+kotlinGradlePlugin = "2.0.10"
 
-activityCompose = "1.9.0"
-coreKtx = "1.13.0"
-lifecycleRuntimeKtx = "2.7.0"
-androidxComposeBom = "2024.04.01"
-startupAndroid = "1.2.0-alpha02"
+activityCompose = "1.9.1"
+coreKtx = "1.13.1"
+lifecycleRuntimeKtx = "2.8.4"
+androidxComposeBom = "2024.08.00"
+startupAndroid = "1.2.0-beta01"
 retrofit = "2.11.0"
-espressoCore = "3.5.1"
+espressoCore = "3.6.1"
 junit = "4.13.2"
-junitVersion = "1.1.5"
+junitVersion = "1.2.1"
 
 [libraries]
 #Compose
@@ -41,3 +41,4 @@ ext-junit = { module = "androidx.test.ext:junit", version.ref = "junitVersion" }
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinGradlePlugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlinGradlePlugin" }
